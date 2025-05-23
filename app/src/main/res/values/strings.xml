@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">netflix3</string>
+    <string name="s_ries">Séries</string>
+    <string name="filmes">Filmes</string>
+    <string name="minha_lista">Minha Lista</string>
+    <string name="intergalatico">Intergaláctico</string>
+    <string name="acao">Ação</string>
+    <string name="fic_o_cientifica">Ficção Cientifica</string>
+    <string name="minha_lista2">MINHA LISTA</string>
+    <string name="assistir">Assistir</string>
+    <string name="detalhes">DETALHES</string>
+    <string name="lan_amento">Lançamento</string>
+</resources>

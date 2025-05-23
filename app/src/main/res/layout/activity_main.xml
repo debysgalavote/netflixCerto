@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCapa"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rei"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_series"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideline3_esquerda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView_series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_ries"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/textView_filmes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_filmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filmes"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_series"
+        app:layout_constraintEnd_toStartOf="@+id/TextView_minhalista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_series"
+        app:layout_constraintTop_toTopOf="@+id/textView_series"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/TextView_minhalista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minha_lista"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_filmes"
+        app:layout_constraintEnd_toEndOf="@id/guideline4_direita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_filmes"
+        app:layout_constraintTop_toTopOf="@+id/textView_filmes"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView2_logofilme"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+        app:srcCompat="@drawable/logostar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textView4_drama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intergalatico"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5_suspense"
+        app:layout_constraintEnd_toStartOf="@+id/textView5_suspense"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideline3_esquerda"
+        app:layout_constraintTop_toTopOf="@+id/textView5_suspense"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView5_suspense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/acao"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/TextView6_criminal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView4_drama"
+        app:layout_constraintTop_toTopOf="@+id/guideline_bottom"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/TextView6_criminal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fic_o_cientifica"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5_suspense"
+        app:layout_constraintEnd_toEndOf="@id/guideline4_direita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView5_suspense"
+        app:layout_constraintTop_toTopOf="@+id/textView5_suspense"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3_esquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4_direita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <Button
+        android:id="@+id/button_assistir"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_arrow_right_24"
+        android:text="@string/assistir"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDetalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonMinhaLista"
+        app:layout_constraintTop_toBottomOf="@id/textView5_suspense" />
+
+    <Button
+        android:id="@+id/buttonMinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/baseline_add_24"
+        android:padding="0dp"
+        android:text="@string/minha_lista2"
+        app:layout_constraintBottom_toBottomOf="@+id/button_assistir"
+        app:layout_constraintEnd_toStartOf="@+id/button_assistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideline3_esquerda"
+        app:layout_constraintTop_toTopOf="@+id/button_assistir" />
+
+    <Button
+        android:id="@+id/buttonDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/baseline_error_24"
+        android:padding="0dp"
+        android:text="@string/detalhes"
+        app:layout_constraintBottom_toBottomOf="@+id/button_assistir"
+        app:layout_constraintEnd_toEndOf="@id/guideline4_direita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_assistir"
+        app:layout_constraintTop_toTopOf="@+id/button_assistir" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/lan_amento"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintStart_toStartOf="@id/guideline3_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button_assistir" />
+
+    <ImageView
+        android:id="@+id/imageView_Filme1"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFilme2"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFilme2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFilme2"
+        app:srcCompat="@drawable/big" />
+
+    <ImageView
+        android:id="@+id/imageViewFilme2"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFilme3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Filme1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/game" />
+
+    <ImageView
+        android:id="@+id/imageViewFilme3"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFilme2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFilme2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFilme2"
+        app:srcCompat="@drawable/dede" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debora Galavote IOT6"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4_direita"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/guideline3_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFilme2"
+        app:layout_constraintVertical_bias="0.879" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
